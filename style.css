@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Kdam+Thmor+Pro&family=Nanum+Brush+Script&family=Noto+Serif&family=Shadows+Into+Light&display=swap');
+
+/* Zerando CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fundo da Tela */
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-image: url(/fundo3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+
+/* Menu - Header - Navbar*/
+
+header {
+    width: 100%;
+    height: 7vh;
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 18px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: darkred;
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+
+/* Centro - Conteúdo Principal*/
+
+main {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Textos Conteúdo Principal*/
+
+.primary-text {
+    border: 1px solid white;
+    background-color: azure;
+    color: black;
+    width: 850px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 200px;
+    text-align: center;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.second-text {
+    margin-bottom: 5rem;
+    font-size: 14px;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* Botões*/
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.buttons button:before {
+    content: '';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(117, 111, 111);
+    z-index: -1;
+    transition: 1s;
+}
+
+.buttons button:hover {
+    color: firebrick;
+    border: none;
+}
+
+.buttons button:hover:before {
+    width: 100%;
+}
